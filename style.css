@@ -1,0 +1,12 @@
+document.querySelector("form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.querySelector('input[type="text"]').value;
+
+  if (name.trim() === "") {
+    alert("Please enter your name");
+    return;
+  }
+
+  alert("Thanks " + name + "! We will contact you soon.");
+});
